@@ -1,0 +1,7 @@
+<p>
+  student-list works!
+</p>
+<div *ngFor="let student of students | async" class="jumbotron">
+  <li>Student: {{student.name}}, Level: {{student.level}}</li>
+</div>
+<!-- END FOR LOOP student-->
