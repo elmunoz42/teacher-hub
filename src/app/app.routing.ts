@@ -7,11 +7,11 @@ import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
-    path: '',
+    path: 'students',
     component: StudentListComponent
   },
   {
-    path: 'about',
+    path: '',
     component: AboutComponent
   },
   {

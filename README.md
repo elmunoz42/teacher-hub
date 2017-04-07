@@ -14,8 +14,8 @@ When login is prompted use user-name "Jimi Marks" and password "0007". No other 
 |DONE|3)A student can click on another student in the list to visit their profile page, which should include more details about them.|a)Create a student-detail component. b) Create a route for student-detail. c) Create the functionality to trigger that route with a (click) event in the HTML object. d) Create dataService function to retrieve data from Firebase by student key |
 |DONE|4)A student can filter the list of users by their achievement level.|Create a pipe and apply it to the student-list after an async pipe that ensures that the Firebase Database's response precedes the filtering actions of the pipe.|
 |DONE|5)The teacher can enroll new students. |a)Create a simple login form with a confirm alert. b) Create an admin-component and an add student button. c) Use an ngIf statement to only display the admin-component and the button if the admin variable is set to true. d) Create the functionality in the dataService to create a student profile in the database.|
-|TODO|6)The teacher can edit student profiles.|a)Create a button that only displays if the admin variable is set to true. b)Create a form that only displays if admin is true. c) Create the functionality in the dataService for updating firebase.|
-|TODO|7)The teacher can delete student profiles.|a)Create a button that only displays if the admin variable is set to true. b) Create the functionality in the dataService for deleting that student from firebase.|
+|DONE|6)The teacher can edit student profiles.|a)Create a button that only displays if the admin variable is set to true. b)Create a form that only displays if admin is true. c) Create the functionality in the dataService for updating firebase.|
+|DONE|7)The teacher can delete student profiles.|a)Create a button that only displays if the admin variable is set to true. b) Create the functionality in the dataService for deleting that student from firebase.|
 
 ## Installation
 

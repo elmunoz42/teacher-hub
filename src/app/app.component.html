@@ -2,10 +2,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Teacher-Hub</a>
+      <a class="navbar-brand" href="http://www.starpowermusic.com/" target="_blank">Star Power Music School</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="about">About</a></li>
+      <li><a routerLink="students">Students</a></li>
+      <li><a routerLink="">About</a></li>
       <li><a *ngIf="!adminLogin" (click)="login()">Login</a></li>
       <li><a *ngIf="adminLogin" (click)="logout()">Jimi Marks - Logout</a></li>
     </ul>
@@ -14,7 +15,7 @@
 </nav>
 <div class="container">
   <div class="row">
-    <div class="jumbotron">
+    <div class="jumbotron" id="titletron">
       <h1 class="title">{{title}}</h1>
     </div>
   </div>

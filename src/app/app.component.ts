@@ -9,10 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Teacher-Hub';
-  // adminLogin: boolean = false;
-  // TODO CHANGE BACK TO FALSE
-  adminLogin: boolean = true;
+  title = "Jimi Mark's Teacher-Hub";
+  adminLogin: boolean = false;
 
   constructor(public router: Router) { }
 
