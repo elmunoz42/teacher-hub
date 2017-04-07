@@ -9,4 +9,18 @@ import { Student } from './student.model';
 })
 export class AppComponent {
   title = 'Teacher-Hub';
+  adminLogin: boolean = false;
+
+  login(){
+    if(prompt("user-name: ")==="Jimi Marks"&&prompt("password: ")==="0007"){
+      this.adminLogin = true;
+      alert("You are logged in");
+    } else {
+      alert("Please try again. user-name: Jimi Marks. pw: 0007");
+    }
+  }
+  logout(){
+    this.adminLogin = false;
+    alert("You are logged out");
+  }
 }
