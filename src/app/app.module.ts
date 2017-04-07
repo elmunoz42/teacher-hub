@@ -10,6 +10,7 @@ import { DataService } from './data.service';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { LevelPipe } from './level.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     StudentListComponent,
     AboutComponent,
-    StudentDetailComponent
+    StudentDetailComponent,
+    LevelPipe
   ],
   imports: [
     BrowserModule,

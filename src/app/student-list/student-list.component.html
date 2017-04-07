@@ -1,4 +1,19 @@
-<div *ngFor="let student of students | async" class="well">
+<div align="center" class="well">
+  <select (change)="onChange($event.target.value)" id="level">
+    <option value="all-levels" selected="selected">all-levels</option>
+    <option value="white" >white</option>
+    <option value="yellow" >yellow</option>
+    <option value="orange" >orange</option>
+    <option value="red" >red</option>
+    <option value="green" >green</option>
+    <option value="blue" >blue</option>
+    <option value="purple" >purple</option>
+    <option value="black" >black</option>
+  </select>
+</div>
+<!-- well -->
+
+<div *ngFor="let student of students | async | level:currentLevel" class="well">
   <li (click)="goToDetailPage(student)">Student: {{student.name}}, Level: {{student.level}}</li>
 </div>
 <!-- END FOR LOOP student-->
