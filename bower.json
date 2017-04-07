@@ -1,0 +1,30 @@
+{
+  "name": "teacher-hub",
+  "description": "App for teachers to keep track of students and for students to meet one another.",
+  "main": "",
+  "authors": [
+    "Carlos Munoz Kampff <elmunoz42@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Tutoring",
+    "Angular",
+    "2",
+    "Star",
+    "Power",
+    "Music",
+    "School"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
