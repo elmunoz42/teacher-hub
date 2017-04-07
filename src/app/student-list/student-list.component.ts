@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Student } from '../student.model';
 import { DataService } from '../data.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,10 +14,14 @@ export class StudentListComponent implements OnInit {
 
   students: FirebaseListObservable<any[]>;
 
-  constructor(public service: DataService) { }
+  constructor(public service: DataService, public router: Router) { }
 
   ngOnInit() {
     this.students = this.service.getStudents();
   }
+
+  goToDetailPage(clickedStudent) {
+   this.router.navigate(['students', clickedStudent.$key]);
+ };
 
 }
