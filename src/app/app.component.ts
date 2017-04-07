@@ -9,7 +9,9 @@ import { Student } from './student.model';
 })
 export class AppComponent {
   title = 'Teacher-Hub';
-  adminLogin: boolean = false;
+  // adminLogin: boolean = false;
+  // TODO CHANGE BACK TO FALSE
+  adminLogin: boolean = true;
 
   login(){
     if(prompt("user-name: ")==="Jimi Marks"&&prompt("password: ")==="0007"){
