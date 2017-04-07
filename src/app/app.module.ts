@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { LevelPipe } from './level.pipe';
 import { AdminComponent } from './admin/admin.component';
+import { EditStudentComponent } from './edit-student/edit-student.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     AboutComponent,
     StudentDetailComponent,
     LevelPipe,
-    AdminComponent
+    AdminComponent,
+    EditStudentComponent
   ],
   imports: [
     BrowserModule,

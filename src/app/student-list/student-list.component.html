@@ -14,6 +14,14 @@
 <!-- well -->
 
 <div *ngFor="let student of students | async | level:currentLevel" class="well">
-  <li (click)="goToDetailPage(student)">Student: {{student.name}}, Level: {{student.level}}</li>
+  <li (click)="goToDetailPage(student)"><strong>Student: {{student.name}}, Level: {{student.level}}</strong></li>
+  <div *ngIf="currentRoute === '/admin'">
+      <div class="well">
+        <p>Notes: {{student.notes}}</p>
+      </div>
+
+      <hr>
+      <app-edit-student></app-edit-student>
+    </div>
 </div>
 <!-- END FOR LOOP student-->
