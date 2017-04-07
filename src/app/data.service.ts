@@ -30,4 +30,9 @@ export class DataService {
                                notes: localUpdatedStudent.notes});
  }
 
+ deleteStudent(localStudentToDelete){
+    var studentEntryInFirebase = this.getStudentById(localStudentToDelete.$key);
+    studentEntryInFirebase.remove();
+  }
+
 }

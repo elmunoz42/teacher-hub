@@ -19,4 +19,9 @@ export class EditStudentComponent implements OnInit {
     this.dataService.updateStudent(studentToUpdate);
   }
 
+  beginDeletingStudent(studentToDelete){
+    if(confirm("Are you sure you want to delete this students from your roster?")){
+      this.dataService.deleteStudent(studentToDelete);
+    }
+  }
 }
