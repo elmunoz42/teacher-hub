@@ -5,12 +5,12 @@
   <!-- left col -->
   <div class="col-md-7">
     <h3>
-      <!-- {{student.name}} -->
+      {{(studentToDisplay| async)?.name}}
     </h3>
     <div class="well">
-      <!-- <p><em>{{student.level}}</em></p> -->
+      <p><em>{{(studentToDisplay| async)?.level}}</em></p>
 
-      <!-- <p>{{student.notes}}</p> -->
+      <p>{{(studentToDisplay| async)?.notes}}</p>
     </div>
   </div>
   <!-- right col -->

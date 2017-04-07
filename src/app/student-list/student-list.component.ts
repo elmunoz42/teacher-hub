@@ -13,7 +13,8 @@ import { Router } from '@angular/router';
 export class StudentListComponent implements OnInit {
 
   students: FirebaseListObservable<any[]>;
-
+  currentRoute: string = this.router.url;
+  
   constructor(public service: DataService, public router: Router) { }
 
   ngOnInit() {
