@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Student } from './student.model';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,6 +14,8 @@ export class AppComponent {
   // TODO CHANGE BACK TO FALSE
   adminLogin: boolean = true;
 
+  constructor(public router: Router) { }
+
   login(){
     if(prompt("user-name: ")==="Jimi Marks"&&prompt("password: ")==="0007"){
       this.adminLogin = true;
@@ -24,5 +27,6 @@ export class AppComponent {
   logout(){
     this.adminLogin = false;
     alert("You are logged out");
+    this.router.navigate(['']);
   }
 }

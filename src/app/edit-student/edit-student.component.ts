@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { Student } from '../student.model';
 
 @Component({
   selector: 'app-edit-student',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditStudentComponent implements OnInit {
 
-  constructor() { }
+  @Input() selectedStudent;
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+  }
+
+  beginUpdatingStudent(studentToUpdate){
+    this.dataService.updateStudent(studentToUpdate);
   }
 
 }

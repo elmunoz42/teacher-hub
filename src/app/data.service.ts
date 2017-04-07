@@ -23,4 +23,11 @@ export class DataService {
   this.students.push(newStudent);
   }
 
+  updateStudent(localUpdatedStudent){
+   var studentEntryInFirebase = this.getStudentById(localUpdatedStudent.$key);
+   studentEntryInFirebase.update({name: localUpdatedStudent.name,
+                               level: localUpdatedStudent.level,
+                               notes: localUpdatedStudent.notes});
+ }
+
 }

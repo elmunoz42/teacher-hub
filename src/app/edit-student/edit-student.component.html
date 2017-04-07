@@ -1,3 +1,14 @@
-<p>
-  edit-student works!
-</p>
+<h4>Edit Student</h4>
+
+<label>New Student Name:</label>
+<input [(ngModel)]="selectedStudent.name">
+<br>
+
+<label>New Student Level:</label>
+<input [(ngModel)]="selectedStudent.level">
+<br>
+
+<label>New Student Notes:</label>
+<input [(ngModel)]="selectedStudent.notes">
+
+<button (click)="beginUpdatingStudent(selectedStudent)">Update</button>
