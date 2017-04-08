@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { LessonComponent } from './lesson/lesson.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'lesson',
     component: LessonComponent
+  },
+  {
+    path: 'schedule',
+    component: ScheduleComponent
   }
 ];
 
