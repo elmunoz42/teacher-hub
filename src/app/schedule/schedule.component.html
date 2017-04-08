@@ -1,13 +1,12 @@
-<p>
-  schedule works!
-</p>
 
 <div *ngIf="adminLogin">
   <h3>
     Schedule Docs. Here you can view your default ongoing schedule and post your upcoming lesson.
   </h3>
-  <a href="https://docs.google.com/spreadsheets/d/1BMYmlHa1MSCboPeFZWPIeAFtekHQldQlgJlV0rTlEN0/edit?usp=sharing">here's a link to the form if you need to modify it.</a>
-  <iframe src="https://docs.google.com/spreadsheets/d/1BMYmlHa1MSCboPeFZWPIeAFtekHQldQlgJlV0rTlEN0/pubhtml?widget=true&amp;headers=false"></iframe>
+
+  <a href="https://docs.google.com/spreadsheets/d/1BMYmlHa1MSCboPeFZWPIeAFtekHQldQlgJlV0rTlEN0/edit?usp=sharing">here's a link to modify sheet.</a>
+  <hr>
+  <iframe width=80% height=400px src="https://docs.google.com/spreadsheets/d/1BMYmlHa1MSCboPeFZWPIeAFtekHQldQlgJlV0rTlEN0/pubhtml?widget=true&amp;headers=false"></iframe>
 </div>
 <div *ngIf="!adminLogin">
   <h3>Please login first then navigate back to view this page.</h3>

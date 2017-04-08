@@ -1,30 +1,41 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Add New Student</h3>
-  </div>
-  <div class="panel-body">
-    <div>
-      <label>Student Name:</label>
-      <br>
-      <input #newName>
-    </div>
+<div class="row">
+  <div class="col-md-5">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Add New Student</h3>
+      </div>
+      <div class="panel-body">
+        <div>
+          <label>Student Name:</label>
+          <br>
+          <input #newName>
+        </div>
 
-    <div>
-      <label>Student Level:</label>
-      <br>
-      <input #newLevel>
-    </div>
+        <div>
+          <label>Student Level:</label>
+          <br>
+          <input #newLevel>
+        </div>
 
-    <div>
-      <label>Notes:</label>
-      <br>
-      <textarea #newNotes></textarea>
+        <div>
+          <label>Notes:</label>
+          <br>
+          <textarea #newNotes></textarea>
+        </div>
+        <button (click)="submitForm(newName.value, newLevel.value, newNotes.value); newName.value=''; newLevel.value=''; newNotes.value=''">Add</button>
+        <hr>
+          <h4>FOR NEW STUDENT'S PARENTS:</h4>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxRoK53MUHONsm9YUZjG0ea7e6-rCb7VWx2EpuY1Om5kclAw/viewform?usp=send_form"><h4>--> Intake form with contract and payment information.</h4></a>
+        <hr>
+      </div>
+      <!-- panel-body -->
     </div>
-    <button (click)="submitForm(newName.value, newLevel.value, newNotes.value); newName.value=''; newLevel.value=''; newNotes.value=''">Add</button>
+    <!-- panel -->
   </div>
-  <!-- panel-body -->
+  <!-- col left-->
+  <div class="col-md-7">
+    <app-student-list></app-student-list>
+  </div>
+  <!-- col right -->
 </div>
-<!-- panel -->
-<div>
-  <app-student-list></app-student-list>
-</div>
+<!-- row -->

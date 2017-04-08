@@ -15,7 +15,7 @@ export class LessonComponent implements OnInit {
   ngOnInit() {
 
     this.adminLogin = this.admin.adminLogin;
-    console.log(this.admin.adminLogin);
+
   }
 
 }

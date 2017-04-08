@@ -19,7 +19,7 @@ export class AppComponent {
       this.adminLogin = true;
       alert("You are logged in");
     } else {
-      alert("Please try again. user-name: Jimi Marks. pw: 0007");
+      alert("Please try again.");
     }
   }
   logout(){
