@@ -7,6 +7,8 @@
     <ul class="nav navbar-nav navbar-right">
       <li><a routerLink="students">Students</a></li>
       <li><a routerLink="">About</a></li>
+      <li><a *ngIf="adminLogin" routerLink="lesson">Lesson</a></li>
+      
       <li><a *ngIf="!adminLogin" (click)="login()">Login</a></li>
       <li><a *ngIf="adminLogin" (click)="logout()">Jimi Marks - Logout</a></li>
     </ul>

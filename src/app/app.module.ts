@@ -13,6 +13,7 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
 import { LevelPipe } from './level.pipe';
 import { AdminComponent } from './admin/admin.component';
 import { EditStudentComponent } from './edit-student/edit-student.component';
+import { LessonComponent } from './lesson/lesson.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     StudentDetailComponent,
     LevelPipe,
     AdminComponent,
-    EditStudentComponent
+    EditStudentComponent,
+    LessonComponent
   ],
   imports: [
     BrowserModule,

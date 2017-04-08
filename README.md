@@ -16,6 +16,11 @@ When login is prompted use user-name "Jimi Marks" and password "0007". No other 
 |DONE|5)The teacher can enroll new students. |a)Create a simple login form with a confirm alert. b) Create an admin-component and an add student button. c) Use an ngIf statement to only display the admin-component and the button if the admin variable is set to true. d) Create the functionality in the dataService to create a student profile in the database.|
 |DONE|6)The teacher can edit student profiles.|a)Create a button that only displays if the admin variable is set to true. b)Create a form that only displays if admin is true. c) Create the functionality in the dataService for updating firebase.|
 |DONE|7)The teacher can delete student profiles.|a)Create a button that only displays if the admin variable is set to true. b) Create the functionality in the dataService for deleting that student from firebase.|
+|TODO|8)Teacher can go to a lesson page which will present her with tools to teach a lesson and report a lesson's attendance and notes.|a)Create a lesson component with Google forms iframe. b)Create route. |
+|TODO|9)Teacher can view ongoing schedule page where she can create update and delete appointments||
+|TODO|10a)Students can navigate to an events page. |a)Create the events link in app component. b) Create an events class. c) Create sample events in the database. d) Create an events component that displays the events.|
+|TODO|10b)Teacher can create, read, update and delete event posts.||
+
 
 ## Hosting
 
@@ -38,6 +43,7 @@ _617-780-8362_
 * _Angular-Cli_
 * _Bower_
 * _TypeScript_
+* _Firebase_
 
 ### License
 
