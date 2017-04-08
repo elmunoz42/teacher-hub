@@ -17,32 +17,34 @@ When login is prompted use user-name "Jimi Marks" and password "0007". No other 
 |DONE|6)The teacher can edit student profiles.|a)Create a button that only displays if the admin variable is set to true. b)Create a form that only displays if admin is true. c) Create the functionality in the dataService for updating firebase.|
 |DONE|7)The teacher can delete student profiles.|a)Create a button that only displays if the admin variable is set to true. b) Create the functionality in the dataService for deleting that student from firebase.|
 
-## Installation
+## Hosting
 
-`npm install angularfire2 firebase --save`
-`bower install`
+ [teacher-hub](https://teacher-hub.firebaseapp.com/)
+## Installing project
 
-## Development server
+* clone project from github repository https://github.com/elmunoz42/teacher-hub.git
+* in terminal  > project directory > run `npm install`.
+* if necessary run > `npm install angularfire2 firebase --save`
+* `npm list -g` bower to check that bower version is 1.8.0 or later.
+* if above is true run `bower init` otherwise `bower install`.
+* in _terminal  > project directory >_ run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Support and contact details
 
-## Code scaffolding
+_617-780-8362_
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+## Technologies Used
 
-## Build
+* _Angular-Cli_
+* _Bower_
+* _TypeScript_
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### License
 
-## Running unit tests
+*MIT*
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Copyright (c) 2017 **_Carlos Munoz Kampff_**
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
