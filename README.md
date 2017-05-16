@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Hosting 
+
+Website is live on Firebase: [Teacher-Hub](https://teacher-hub.firebaseapp.com/)
+
 ## Admin Login Info
 
 When login is prompted use user-name "Jimi Marks" and password "0007". No other login available at this time.
